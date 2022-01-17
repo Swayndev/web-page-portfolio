@@ -27,35 +27,52 @@ body {
 .nav {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
+	position: fixed;
+
 	width: 100%;
 	height: 4rem;
-	background-color: #ffffff;
-	position: fixed;
+
+	background-color: #232323;
 	top: 0;
 	left: 0;
+	right: 0;
 	z-index: 2;
 }
 
-.nav__logo {
+.nav__logo svg {
+	fill: #ffffff;
 	height: 3rem;
-	margin-left: 4rem;
+
+	margin-left: 0rem;
+	margin-right: 0rem;
+
+	border: 2px white;
+
+	z-index: 2;
 }
 
 .nav__container {
 	display: flex;
+
 	list-style-type: none;
 	margin: 1em;
 	padding: 0;
+
 }
 
 .nav__link {
+	border: 4px pink;
 	color: #ebebeb;
 	background-color: #232323;
+
 	font-size: 1.5rem;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 1.25rem 5rem;
+
+	width: 20%;
+	padding: 1.25rem;
+
 }
 
 .nav__link:hover {
@@ -65,13 +82,22 @@ body {
 
 /* Header */
 .header {
-	height: 80vh;
+
+	height: 90vh;
 	max-height: fit-content;
-	color: #444444;
+
+	color: white;
 	background-image: url('../img/iran-g8dc23ab5d_1920.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
 	text-align: center;
-	margin-top: 30vh;
+
+	margin-top: 4rem;
 	padding-top: 10rem;
+
+	border: 2px solid black;
 }
 
 .header__title {
@@ -89,13 +115,13 @@ body {
 
 .header__link {
 	color: #328CA8;
-	border-bottom: 3px solid #444444;
+
 	font-weight: bold;
 	text-decoration: none;
 }
 
 .header__link:hover {
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 
@@ -424,16 +450,8 @@ body {
 
 /* svg icons for social networks */
 
-.social__link svg {
-	display: block;
-	width: 6rem;
-	height: 6rem;
-	margin: 0 auto;
-}
 
-.social__link svg path {
-	fill: #232323*66;
-}
+
 
 .social__link:hover svg path {
 	opacity: 0.75;
@@ -512,16 +530,19 @@ body {
 /* Footer */
 .footer {
 	background-color: #ebebeb;
-	padding: 4rem 15%;
+	padding: 1rem;
+
+	height: 40vh;
+
 }
 
 .footer .heading {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	color: #232323;
-	font-size: 3.5rem;
-	font-weight: 800;
+	font-size: 3rem;
+	font-weight: 600;
 }
 
 .footer__line {
@@ -535,21 +556,22 @@ body {
 }
 
 .footer .social__link svg {
-	width: 4rem;
-	height: 4rem;
+	display: block;
+	width: 3rem;
+	height: 3rem;
 }
 
 .footer .social__link svg path {
 	fill: #444444;
-	opacity: 0.25;
+	opacity: 0.50;
 }
 
 .footer .social__link:hover svg path {
-	opacity: 0.5;
+	opacity: 0.80;
 }
 
 .footer__copy {
 	font-size: 1.5rem;
 	text-align: center;
-	margin-top: 4rem;
+	margin-top: 2rem;
 }
